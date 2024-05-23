@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "24889772441",
+    "project_id": "gigi-games",
+    "storage_bucket": "gigi-games.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24889772441:android:63927f4b0ea4cdae606b08",
+        "android_client_info": {
+          "package_name": "com.BranchingBee.GigiGames"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCszoCFb4C0d_opP8K_j-kG71UIFQ3YN1I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
