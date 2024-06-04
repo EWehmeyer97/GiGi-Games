@@ -23,10 +23,10 @@ public class SignUpUI : MonoBehaviour
 
         if (registerTask.Exception != null)
         {
-            
+            //TODO - Something went wrong, account for this
         } else
         {
-
+            StartUpUI.Instance.LoadHome();
         }
     }
 }

@@ -340,7 +340,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 25318431}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1503492190}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &25318431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -495,8 +507,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6ff5a3af081e04691b37c19deae1c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keepAlive: 0
+  onlyOnEnable: 0
   signUpScreen: {fileID: 592906430}
-  logInScreen: {fileID: 1415589575}
+  loginScreen: {fileID: 1415589575}
   homeScreen: {fileID: 347156290}
 --- !u!1 &82693880
 GameObject:
@@ -1582,7 +1596,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 418647982}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1503492190}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &418647982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5685,15 +5711,15 @@ MonoBehaviour:
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
   m_ScrollSensitivity: 1
-  m_ContentType: 4
+  m_ContentType: 9
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 1
   m_LineType: 0
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
-  m_CharacterValidation: 4
-  m_RegexValue: 
+  m_CharacterValidation: 6
+  m_RegexValue: '[A-Za-z0-9_-]'
   m_GlobalPointSize: 14
   m_CharacterLimit: 16
   m_OnEndEdit:
@@ -6936,7 +6962,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1411914497}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1415589575}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 592906430}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1411914497
 MonoBehaviour:
   m_ObjectHideFlags: 0
