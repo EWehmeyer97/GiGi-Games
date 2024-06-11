@@ -3,26 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class SignUpUI : MonoBehaviour
+public class LogInUI : MonoBehaviour
 {
     [SerializeField] private TMP_InputField emailField;
     [SerializeField] private TMP_InputField passwordField;
-    [SerializeField] private TMP_InputField confirmPasswordField;
-    
-    public void SignUp_OnClick()
+
+    public void Login_OnClick()
     {
-        StartCoroutine(RegisterUser(emailField.text, passwordField.text));
+        StartCoroutine(LoginUser(emailField.text, passwordField.text));
     }
 
-    private IEnumerator RegisterUser(string email, string password)
+    private IEnumerator LoginUser(string email, string password)
     {
-        var registerTask = FirebaseInit.Instance.Auth.CreateUserWithEmailAndPasswordAsync(email, password);
+        var registerTask = FirebaseInit.Instance.Auth.SignInWithEmailAndPasswordAsync(email, password);
         yield return new WaitUntil(() => registerTask.IsCompleted);
 
         if (registerTask.Exception != null)
         {
             //TODO - Something went wrong, account for this
-        } else
+        }
+        else
         {
             StartUpUI.Instance.LoadHome();
         }
