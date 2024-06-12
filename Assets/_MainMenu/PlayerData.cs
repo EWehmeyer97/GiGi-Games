@@ -6,13 +6,13 @@ using UnityEngine;
 
 public class PlayerData : Singleton<PlayerData>
 {
-    private string userID;
+    private string userID = "";
     public string UserID
     {
         get { return userID; }
     }
 
-    private string displayName;
+    private string displayName = "";
     public string DisplayName
     {
         get { return displayName; }
@@ -25,11 +25,22 @@ public class PlayerData : Singleton<PlayerData>
         displayName = currentUser.DisplayName;
     }
 
-    public void UpdatePlayer(string name)
+    public void UpdatePlayerName(string name)
     {
         displayName = name;
         UserProfile info = new UserProfile();
         info.DisplayName = displayName;
+        info.PhotoUrl = FirebaseInit.Instance.Auth.CurrentUser.PhotoUrl;
         FirebaseInit.Instance.Auth.CurrentUser.UpdateUserProfileAsync(info);
+    }
+
+    public void LogOut()
+    {
+        FirebaseInit.Instance.Auth.SignOut();
+    }
+
+    public void DeleteAccount()
+    {
+        FirebaseInit.Instance.Auth.CurrentUser.DeleteAsync();
     }
 }

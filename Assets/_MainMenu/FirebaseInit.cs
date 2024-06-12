@@ -65,11 +65,12 @@ public class FirebaseInit : MonoBehaviour
             {
                 _isConnected = false;
             }
-            OnFirebaseInit.Invoke();
         } else
         {
             Destroy(gameObject);
         }
+
+        OnFirebaseInit.Invoke();
     }
 
     private void OnDestroy()

@@ -6,7 +6,6 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.SceneManagement;
 
 public class FirebaseConfig : MonoBehaviour
 {
@@ -42,7 +41,7 @@ public class FirebaseConfig : MonoBehaviour
                     OnConfigDecline.Invoke();
                 } else
                 {
-                    SceneManager.LoadScene(1);
+                    SceneLoader.Instance.LoadHome();
                 }
         });
     }

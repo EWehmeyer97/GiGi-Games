@@ -6452,14 +6452,14 @@ MonoBehaviour:
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
   m_ScrollSensitivity: 1
-  m_ContentType: 4
+  m_ContentType: 6
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 1
+  m_KeyboardType: 7
   m_LineType: 0
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
-  m_CharacterValidation: 4
+  m_CharacterValidation: 7
   m_RegexValue: 
   m_GlobalPointSize: 14
   m_CharacterLimit: 0
@@ -7320,8 +7320,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c84e030a9234adc4586f72be672b0a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emailField: {fileID: 0}
-  passwordField: {fileID: 0}
+  emailField: {fileID: 1317037542}
+  passwordField: {fileID: 893369727}
 --- !u!1 &1491399008
 GameObject:
   m_ObjectHideFlags: 0
@@ -7561,7 +7561,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1497405061}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1415589579}
+        m_TargetAssemblyTypeName: LogInUI, Assembly-CSharp
+        m_MethodName: Login_OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1497405061
 MonoBehaviour:
   m_ObjectHideFlags: 0
