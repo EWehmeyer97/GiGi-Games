@@ -1,5 +1,6 @@
 using Firebase;
 using Firebase.Auth;
+using Firebase.Database;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -36,6 +37,18 @@ public class FirebaseInit : MonoBehaviour
         get
         {
             return _app;
+        }
+    }
+
+    private FirebaseDatabase _data;
+    public FirebaseDatabase Data
+    {
+        get
+        {
+            if (_data == null)
+                _data = FirebaseDatabase.GetInstance(App);
+
+            return _data;
         }
     }
 
